@@ -1,0 +1,31 @@
+{
+  "name": "adcs-stamp-duty-calculator",
+  "version": "1.0.0",
+  "description": "AD Consultant & Service - Stamp Duty & Registration Fee Calculator",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node server.js",
+    "start": "concurrently \"npm run dev\" \"npm run server\"",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.0",
+    "@capacitor/core": "^6.1.0",
+    "concurrently": "^10.0.3",
+    "cors": "^2.8.6",
+    "docx": "^9.7.1",
+    "express": "^5.2.1",
+    "html2pdf.js": "^0.14.0",
+    "multer": "^2.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "vite": "^5.4.0"
+  }
+}

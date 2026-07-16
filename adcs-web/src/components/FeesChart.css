@@ -1,0 +1,95 @@
+.chart-container {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 25px;
+  margin: 20px 0;
+  border: 1px solid rgba(70, 166, 255, 0.2);
+}
+
+.chart-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.chart-placeholder {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: 40px 20px;
+  font-style: italic;
+}
+
+.chart-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.chart-center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+}
+
+.chart-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.chart-value {
+  font-size: 1.6rem;
+  color: #22c55e;
+  font-weight: 700;
+}
+
+.fee-percentages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.percentage-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-color);
+}
+
+.percentage-label {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.percentage-value {
+  color: #22c55e;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .chart-container {
+    padding: 15px;
+  }
+
+  .fee-percentages {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-center-text .chart-value {
+    font-size: 1.3rem;
+  }
+}
