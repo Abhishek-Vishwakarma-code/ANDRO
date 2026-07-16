@@ -95,7 +95,7 @@ export default function Calculator() {
         </div>
 
         <DocumentChecklist agreement={agreement} setAgreement={setAgreement} />
-      </main>
+      </div>
     </div>
   );
 }
